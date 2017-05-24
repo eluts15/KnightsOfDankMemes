@@ -1,0 +1,8 @@
+<h1>The Knights who say Ni!</h1>
+<ul>
+  @foreach (var knight in Model)
+  {
+    <li><a href='/knights/@knight.GetId()'>@knight.GetName()</a></li>
+  }
+</ul>
+<a href="/knights/new">Add Another Knight!</a>
